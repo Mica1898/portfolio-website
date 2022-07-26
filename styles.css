@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins';
+}
+
+body {
+    width: 100%;
+}
+
+:root {
+    --orange: #F9A826;
+    --white: #FFFFFF;
+    --green: #005248;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar img {
+    width: 200px;
+    height: 200px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: inset 0 0 0 0 #F9A826;
+    transition: ease-out 0.3s;
+    border-radius: 15px;
+}
+
+.menu-btn:hover {
+    box-shadow: inset 150px 0 0 0 #F9A826;
+    transition: ease-out 0.3s;
+}
+
+.home-btn:hover {
+    color: #C98800;
+    transform: scale(1.5);
+    transition: color .25s ease-in-out .15s, transform .25s ease-out;
+}
+
+.project-btn a {
+    transition: ease-out .3s;
+}
+
+.project-btn:hover {
+    transform: scale(1.5);
+    transition: color .25s ease-in-out .15s, transform .25s ease-out;
+}
+
+.project-btn a:hover {
+    color: var(--orange);
+}
+
+.home-btn a:hover {
+    color: var(--orange);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px 40px 0 40px;
+}
+
+.hero h1 {
+    color: var(--orange);
+}
+
+@media only screen and (max-width: 300px) {
+    .profile-image {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #about-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+}
+
+.hero-left {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+@media only screen and (min-width: 700px) {
+    
+    .hero-left h1 {
+    font-size: 80px;
+    color: var(--orange)
+    }
+
+    .text-image {
+        display: none;
+    }
+        
+}
+
+.hero-left h2 {
+    font-size: 60px;
+}
+
+.hero-left h4 {
+    font-size: 30px;
+}
+
+
+.hero img {
+    padding-top: 20px;
+    max-width: 100%;
+}
+
+.socials {
+    display: flex;
+    padding-top: 10px;
+}
+
+.btn-link {
+    padding-right: 15px;
+    transition: ease-out .3s;
+}
+
+.btn-link:hover {
+    fill: #F9A826;
+    transform: scale(1.5);
+    transition: fill .25s ease-in-out .05s, transform .15s ease-out;
+}
+
+.btn-git {
+    transition: ease-out .3s;
+}
+
+.btn-git:hover {
+    fill: #F9A826;
+    transform: scale(1.5);
+    transition: fill .25s ease-in-out .05s, transform .15s ease-out;
+}
+
+#about-section {
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.profile-picture-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture-box img {
+    max-width: 50%
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .profile-picture-box img {
+        max-width: 25%
+    
+    }
+}
+
+.about-info {
+    background-color: var(--white);
+    flex-wrap: wrap;
+    padding: 5px 20px;
+    width: 50%;
+    text-align: center;
+    margin: auto auto;
+}
+
+.about-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 55%;
+}
+
+.about-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600) {
+    .about-video-container iframe {
+        height: auto;
+        width: auto;
+    }
+}
+
+
+
+.profile-container {
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.about-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.badges {
+    padding: 25px;
+    background-image: url("images/blob-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.project-card {
+    width: 250px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(198, 198, 198);
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-badges {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#contact-container {
+    background-color: var(--green);
+    background-image: url("images/blob.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+#contact-container img {
+    max-width: 75%;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .bigphone-image {
+        display: none;
+    }
+}
+
+.contact-info {
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+}
+
+.contact-info img {
+    max-width: 100%;
+    padding-bottom: 30px;
+
+}
+
+
+.contact-form {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+input, textarea {
+    width: 100%;
+    font-weight: 600;
+}
+
+form {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, .20);
+}
+
+.button {
+    width: 25%;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: inset 0 0 0 0 #F9A826;
+    transition: ease-out 0.3s;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.submit-btn:hover {
+    box-shadow: inset 150px 0 0 0 #F9A826;
+    transition: ease-out 0.3s;
+}
+
+
+
